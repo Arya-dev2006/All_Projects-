@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#nav {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    padding: 0.1px;
+}
+
+#circle {
+
+    width: 10%;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 50px;
+}
+
+
+
+
+.box {
+    width: 15%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: black;
+    @media (max-width:750px) {
+        height: 25%;
+
+    }
+}
+
+#nav2 {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-left: 3%;
+}
+
+#container{
+    height: calc(100% - 10% - 10vh);
+   
+}
+
+#text-content{
+    height: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+   
+
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    padding-left: 28%;
+    
+}
+.elem h1{
+    font-size: 10vw;
+}
+
+#text-content::-webkit-scrollbar{
+    background: transparent;
+    height: 5px;
+    
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 160, 37);
+    
+   
+}
+
+#image-content{
+    height: 50%;
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+
+#image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+#image-content::-webkit-scrollbar{
+    background: transparent;
+    display: none;
+}
